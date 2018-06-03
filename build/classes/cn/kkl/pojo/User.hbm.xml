@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-2 19:57:08 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="cn.kkl.pojo.User" table="USER">
+        <id name="Id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="uname" type="java.lang.String">
+            <column name="UNAME" />
+        </property>
+        <property name="upassword" type="java.lang.String">
+            <column name="UPASSWORD" />
+        </property>
+        <property name="gender" type="java.lang.Character">
+        	<column name="GENDER"></column>
+        </property>
+    </class>
+</hibernate-mapping>
